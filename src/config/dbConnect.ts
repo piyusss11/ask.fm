@@ -13,9 +13,9 @@ export async function connectDb(): Promise<void> {
       return;
     }
     const db = await mongoose.connect(
-      (process.env.MONGODB_URI as string) || ""
+      (process.env.MONGO_URI as string) || ""
     );
-    console.log(db);
+    // console.log(db);
     connection.isConnecteed = db.connections[0].readyState;
     console.log("DB connected Succesfully");
   } catch (error) {
