@@ -1,4 +1,4 @@
-import { connectDb } from "@/config/dbConnect";
+import connectDb from "@/config/dbConnect";
 import { generateVerificationCode } from "@/helpers/generatingOTP";
 import { sendVerificationEmail } from "@/helpers/sendEmailVerification";
 import UserModel from "@/model/User";
